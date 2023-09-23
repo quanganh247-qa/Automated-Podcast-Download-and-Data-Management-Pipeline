@@ -12,7 +12,7 @@ This file describes, in order, the steps involved in doing this project.
 - Write first task in DAG
 
 ### Fisrt task :
-```
+```Python
 import xmltodict
 import requests
 from airflow.decorators import dag, task
@@ -68,7 +68,7 @@ create_dtb = SqliteOperator(
 - `pip install 'apache-airflow[pandas]'`
 - Add in load episodes function
 
-```
+```Python
  @task 
     def load_content(episodes):
         hook = SqliteHook(sqlite_conn_id ='podcasts')
@@ -85,7 +85,7 @@ create_dtb = SqliteOperator(
 ```
 
 ## Third task
-```
+```Pyton
 import requests
 import xmltodict
 from airflow.decorators import dag, task
@@ -147,7 +147,7 @@ def podcast():
 - View database
     - `sqlite3 episodes.db`
 ## Load into csv and download
-```
+```Python
 @task
     def download(episodes):
         new_episodes = []
