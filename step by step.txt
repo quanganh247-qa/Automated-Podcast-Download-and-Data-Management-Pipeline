@@ -1,0 +1,10 @@
+sudo apt-get update
+sudo apt install python3-pip
+sudo pip install apache-airflow
+sudo pip install pandas 
+sudo pip install s3fs
+sudo apt install sqlite3
+pip install 'apache-airflow[pandas]'
+
+export AIRFLOW_HOME=~/airflow
+cp etl.py $AIRFLOW_HOME/dags
