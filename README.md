@@ -16,7 +16,7 @@ To follow this project, please install the following locally:
 - Airflow 2.3+
 - Python 3.8+
 - Python packages:
-+ pandas
-+ sqlite3
-+ xmltodict
-+ requests
+  - pandas
+  - sqlite3
+  - xmltodict
+  - requests
