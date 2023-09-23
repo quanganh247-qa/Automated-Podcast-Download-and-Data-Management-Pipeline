@@ -85,7 +85,7 @@ create_dtb = SqliteOperator(
 ```
 
 ## Third task
-```Pyton
+```Python
 import requests
 import xmltodict
 from airflow.decorators import dag, task
